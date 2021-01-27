@@ -10,7 +10,6 @@ import {
   FaGithubSquare,
   FaFacebookSquare,
 } from "react-icons/fa";
-import Footer from "./Footer";
 import {
   useColorModeValue,
   Box,
