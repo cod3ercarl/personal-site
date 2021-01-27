@@ -1,0 +1,84 @@
+html,
+body,
+header {
+  /* background-color: black; */
+  height: 100vh;
+  color: #343a40;
+  position: relative;
+  margin: auto;
+}
+
+.myHeader {
+  font-family: "Rancho", cursive;
+}
+.container {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.players {
+  max-width: 1500px;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.players article {
+  margin: 1.5rem;
+  max-width: 955px;
+  height: auto;
+  flex: 350px 500px 1000px;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+}
+.players section {
+  margin: 1.5rem;
+  max-width: 450px;
+  height: auto;
+  flex: 0 0 550px;
+  padding: 15px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+}
+
+.myWork {
+  font-size: 1em;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+}
+.central {
+  margin: auto;
+}
+
+.dark {
+  color: white;
+}
+
+.hr-light {
+  border: solid 0.5px #343a40;
+}
+
+.hr-dark {
+  border: solid 0.5px white;
+}
+
+.myBg {
+  background-image: url("../images/backgroundImg.jpg");
+  background-size: cover;
+}
+.myLightBg {
+  background-image: url("../images/light_mode_.jpg");
+  background-size: cover;
+}
