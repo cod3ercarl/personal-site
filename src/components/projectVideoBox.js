@@ -1,16 +1,7 @@
-import {
-  Box,
-  Text,
-  Center,
-  VStack,
-  Image,
-  Link,
-  AspectRatio,
-} from "@chakra-ui/react";
+import { Box, Text, Center, VStack, Link } from "@chakra-ui/react";
 import { Player, ControlBar, PlayToggle } from "video-react";
 import "../../node_modules/video-react/dist/video-react.css";
 export default function InfoBox({
-  title,
   text,
   image,
   video,

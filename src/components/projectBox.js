@@ -1,7 +1,6 @@
 import { Box, Text, Center, VStack, Image, Link } from "@chakra-ui/react";
 
 export default function InfoBox({
-  title,
   text,
   image,
   website,
