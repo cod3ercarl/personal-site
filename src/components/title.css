@@ -1,0 +1,111 @@
+.title {
+  width: 250px;
+  margin: 2rem;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+.aboutMe:hover {
+  background-color: black;
+  opacity: 0.5;
+}
+#about-me {
+  width: 250px;
+  margin: 2rem;
+  text-align: center;
+}
+
+#viewMyWork {
+  width: 250px;
+  margin: 2rem;
+  text-align: center;
+}
+
+.title-header {
+  font-size: 1.2rem;
+}
+.title-subheading {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+
+.hr-light {
+  border: solid 0.5px #343a40;
+  margin: auto;
+  width: 90%;
+}
+
+.hr-dark {
+  border: solid 0.5px white;
+  margin: auto;
+  width: 100%;
+}
+.title-btn {
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 370px) {
+  .title {
+    width: 300px;
+  }
+  .title-header {
+    font-size: 1.8rem;
+  }
+  .title-subheading {
+    font-size: 1rem;
+  }
+  #about-me {
+    width: 300px;
+    margin: 2rem;
+  }
+
+  #viewMyWork {
+    width: 300px;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    width: 500px;
+  }
+  .title-header {
+    font-size: 3rem;
+  }
+  .title-subheading {
+    font-size: 1.5rem;
+  }
+  #about-me {
+    width: 500px;
+    margin: 2rem;
+  }
+
+  #viewMyWork {
+    width: 500px;
+    margin: 2rem;
+  }
+}
+/* 
+@media only screen and (min-width: 996px) {
+  .title {
+    width: 700px;
+  }
+  .title-header {
+    font-size: 4.7rem;
+  }
+  .title-subheading {
+    font-size: 2rem;
+  }
+
+  #about-me {
+    width: 700px;
+    margin: 2rem;
+  }
+
+  #viewMyWork {
+    width: 700px;
+    margin: 2rem;
+  }
+} */

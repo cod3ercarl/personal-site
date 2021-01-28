@@ -1,4 +1,13 @@
-import { Box, Text, Center, VStack, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Center,
+  VStack,
+  HStack,
+  Link,
+  Button,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { Player, ControlBar, PlayToggle } from "video-react";
 import "../../node_modules/video-react/dist/video-react.css";
 export default function InfoBox({
@@ -10,14 +19,38 @@ export default function InfoBox({
   github,
   link,
 }) {
+  const bg = useColorModeValue("light", "dark");
   return (
     <Center>
-      <VStack className={"container"}>
-        <Box className={"box"}>
-          <Link href={website} isExternal>
+      <VStack>
+        <Box>
+          <Link className="box-title" href={website} isExternal>
             {link}
           </Link>
           <Text style={{ fontSize: "1rem" }}>{technologies}</Text>
+          <Box>
+            {" "}
+            <Link href={github} isExternal>
+              <Button
+                mr={5}
+                mt={10}
+                colorScheme={bg === "dark" ? "white" : "#191919"}
+                variant="outline"
+              >
+                Github Repository
+              </Button>
+            </Link>
+            <Link href={website} isExternal>
+              <Button
+                mr={5}
+                mt={10}
+                colorScheme={bg === "dark" ? "white" : "#191919"}
+                variant="outline"
+              >
+                Website
+              </Button>
+            </Link>
+          </Box>
 
           <br />
           <br />

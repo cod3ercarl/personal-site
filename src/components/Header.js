@@ -1,17 +1,20 @@
 import React from "react";
+import "./header.css";
 import {
   Box,
-  Heading,
   Flex,
   Text,
   Button,
   useColorModeValue,
   Link,
+  useDisclosure,
 } from "@chakra-ui/react";
+
+import Modals from "./Modals";
 import ThemeToggler from "./themeToggler";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 const MenuItems = ({ children }) => (
-  <Text fontSize="xl" mt={{ base: 4, md: 0 }} mr={6} display="block">
+  <Text fontSize="xl" mt={{ base: 4, md: 2 }} mr={5} ml={5} display="block">
     {children}
   </Text>
 );
@@ -21,27 +24,20 @@ const Header = () => {
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
   const bg = useColorModeValue("light", "dark");
-
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Flex
+      className="nav-container"
       as="nav"
-      align="center"
-      justify="space-between"
-      wrap="wrap"
-      padding="1.5rem"
       bg={bg === "light" ? "white" : "#191919"}
       color={bg === "light" ? "black" : "white"}
-      p={6}
-      pos="sticky"
-      top="0"
-      zIndex={2}
       borderBottom={bg === "light" ? "black 1px solid" : "white 1px solid"}
     >
       <Flex align="center" mr={5}>
         <ThemeToggler />
-        <Heading as="h1" size="xl" mr={10} ml={10} mb={1}>
+        <h1 className="nav-header" mr={10} ml={10} mb={1}>
           Carl McIntosh
-        </Heading>
+        </h1>
       </Flex>
 
       <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
@@ -49,11 +45,10 @@ const Header = () => {
       </Box>
 
       <Box
+        className="box"
         display={{ sm: show ? "block" : "none", md: "flex" }}
-        width={{ sm: "full", md: "auto" }}
-        alignItems="center"
-        flexGrow={1}
-        mr={10}
+        width={{ sm: "auto", md: "auto" }}
+        mr={5}
       >
         <Link href="#about-me">
           <MenuItems>About Me</MenuItems>{" "}
@@ -67,11 +62,14 @@ const Header = () => {
         display={{ sm: show ? "block" : "none", md: "block" }}
         mt={{ base: 4, md: 0 }}
       >
-        <Link href="#contactMe">
-          <Button bg="transparent" border="1px">
-            Contact Me
-          </Button>
-        </Link>
+        <Modals
+          text="Contact Me"
+          bg="transparent"
+          border="1px"
+          isOpen={isOpen}
+          onOpen={onOpen}
+          onClose={onClose}
+        />
       </Box>
     </Flex>
   );

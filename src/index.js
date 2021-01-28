@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
 import { ChakraProvider, ColorModeScript, extendTheme } from "@chakra-ui/react";
 import theme from "./theme";
 import App from "./App";

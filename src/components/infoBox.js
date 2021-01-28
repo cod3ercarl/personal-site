@@ -5,7 +5,7 @@ export default function InfoBox({ title, text }) {
     <Center>
       <VStack className={"container"}>
         <Box className={"box"}>
-          <Heading textAlign="center">{title}</Heading>
+          <Heading>{title}</Heading>
           <br />
           <Text>{text}</Text>
         </Box>
