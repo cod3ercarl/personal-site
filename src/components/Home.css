@@ -1,12 +1,12 @@
 .players {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0px auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 .box-title {
-  font-size: 3rem;
+  font-size: 1.2rem;
 }
 
 .players article {
@@ -15,7 +15,7 @@
   height: auto;
   flex: 0 500px 1000px;
   padding: 15px;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
@@ -24,9 +24,9 @@
 .players section {
   margin: 1.5rem;
   height: auto;
-  flex: 0 0 600px;
+  flex: 0 0 380px;
   padding: 15px;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   border-radius: 10px;
   display: flex;
   position: relative;
@@ -48,9 +48,27 @@
   background-size: cover;
 }
 @media only screen and (min-width: 496px) {
+  .players article {
+    font-size: 0.9rem;
+  }
+  .players section {
+    font-size: 0.9rem;
+  }
+  .box-title {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .players article {
+    font-size: 1.2rem;
+  }
+  .players section {
+    font-size: 1.2rem;
+  }
+  .box-title {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
