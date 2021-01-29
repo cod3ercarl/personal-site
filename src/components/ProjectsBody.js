@@ -4,20 +4,7 @@ import ProjectBox from "./projectBox";
 import ProjectVideoBox from "./projectVideoBox";
 
 import "./Home.css";
-import {
-  useColorModeValue,
-  useDisclosure,
-  Box,
-  Center,
-  Heading,
-  Button,
-  VStack,
-  Link,
-  Flex,
-  Text,
-  Icon,
-  Tooltip,
-} from "@chakra-ui/react";
+import { useColorModeValue, Icon } from "@chakra-ui/react";
 
 const ProjectsBody = () => {
   const bg = useColorModeValue("light", "dark");

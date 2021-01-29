@@ -1,11 +1,4 @@
-import {
-  Box,
-  Heading,
-  Center,
-  VStack,
-  Button,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Center, VStack, useColorModeValue } from "@chakra-ui/react";
 
 import "./title.css";
 export default function AboutMe() {

@@ -3,7 +3,6 @@ import {
   Text,
   Center,
   VStack,
-  HStack,
   Link,
   Button,
   useColorModeValue,

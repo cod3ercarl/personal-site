@@ -1,25 +1,14 @@
 import React from "react";
 import "./header.css";
 import soc from "../images/soc.png";
-import {
-  Box,
-  Flex,
-  Text,
-  Button,
-  useColorModeValue,
-  Tooltip,
-  useDisclosure,
-  Icon,
-} from "@chakra-ui/react";
+import { Flex, Text, useColorModeValue, Tooltip, Icon } from "@chakra-ui/react";
 import {
   FaLinkedin,
   FaTwitterSquare,
   FaGithubSquare,
   FaFacebookSquare,
 } from "react-icons/fa";
-import Modals from "./Modals";
-import ThemeToggler from "./themeToggler";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+
 const MenuItems = ({ children }) => (
   <Text fontSize="xl" mt={{ base: 4, md: 2 }} mr={10} display="block">
     {children}
@@ -28,10 +17,8 @@ const MenuItems = ({ children }) => (
 
 // Note: This code could be better, so I'd recommend you to understand how I solved and you could write yours better :)
 const Header = () => {
-  const [show, setShow] = React.useState(false);
-  const handleToggle = () => setShow(!show);
   const bg = useColorModeValue("light", "dark");
-  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Flex
       className="nav-container"

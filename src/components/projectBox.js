@@ -1,7 +1,6 @@
 import {
   Box,
   Text,
-  Center,
   VStack,
   Image,
   Link,

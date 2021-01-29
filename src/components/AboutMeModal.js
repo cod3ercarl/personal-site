@@ -1,32 +1,19 @@
 import React from "react";
-import AboutMe from "./AboutMe";
 import AboutMeBody from "./AboutMeBody";
 import {
   useColorModeValue,
-  useDisclosure,
   Box,
   Center,
-  HStack,
-  Button,
   Modal,
-  ModalOverlay,
   ModalContent,
   ModalHeader,
   ModalFooter,
   ModalBody,
   ModalCloseButton,
   VStack,
-  Icon,
 } from "@chakra-ui/react";
 
-import {
-  FaLinkedin,
-  FaTwitterSquare,
-  FaGithubSquare,
-  FaFacebookSquare,
-} from "react-icons/fa";
-
-const AboutMeModal = ({ isOpen, onOpen, onClose, text, border }) => {
+const AboutMeModal = ({ isOpen, onOpen, onClose }) => {
   const bg = useColorModeValue("light", "dark");
   return (
     <>
@@ -59,7 +46,7 @@ const AboutMeModal = ({ isOpen, onOpen, onClose, text, border }) => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalContent maxWidth="56rem">
           <ModalHeader color={bg === "dark" ? "white" : "#191919"}>
-            hello
+            A little more about myself!
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody color={bg === "dark" ? "white" : "#191919"}>
