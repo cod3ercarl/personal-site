@@ -30,8 +30,8 @@ const Modals = ({ isOpen, onOpen, onClose, text, border }) => {
         border={border}
         onClick={onOpen}
         size="md"
-        height="48px"
-        width="200px"
+        height="35px"
+        width="120px"
         borderColor="green.500"
       >
         {text}

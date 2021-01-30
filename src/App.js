@@ -1,11 +1,12 @@
 import Header from "./components/Header";
+import TheNavBar from "./components/Navbar";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <>
       <Router>
-        <Header />
+        <TheNavBar />
         <Switch>
           <Route path="/">
             <Home />

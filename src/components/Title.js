@@ -11,7 +11,7 @@ import "./title.css";
 export default function Title() {
   const bg = useColorModeValue("light", "dark");
   return (
-    <Center>
+    <Center id="home">
       <VStack>
         <Box
           className="title"

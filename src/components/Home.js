@@ -35,8 +35,6 @@ const Home = () => {
       </Box>
 
       <Box bg={bg === "light" ? "#E8E8E8 " : "#1A1A1A"}>
-        {/* <AboutMe />
-        <AboutMeBody /> */}
         <AboutMeModal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
         <Projects />
         <ProjectsBody />

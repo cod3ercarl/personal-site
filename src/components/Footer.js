@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 const MenuItems = ({ children }) => (
-  <Text fontSize="xl" mt={{ base: 4, md: 2 }} mr={10} display="block">
+  <Text fontSize="xl" mt={{ base: 4, md: 2 }} m={3} display="block">
     {children}
   </Text>
 );
@@ -33,7 +33,7 @@ const Header = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Icon as={FaLinkedin} boxSize={10} />{" "}
+          <Icon as={FaLinkedin} boxSize={8} />{" "}
         </a>
       </MenuItems>
       <MenuItems>
@@ -43,13 +43,13 @@ const Header = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Icon as={FaTwitterSquare} boxSize={10} />
+          <Icon as={FaTwitterSquare} boxSize={8} />
         </a>
       </MenuItems>
       <MenuItems>
         {" "}
         <a href="https://github.com/cod3rcarl" target="_blank" rel="noreferrer">
-          <Icon as={FaGithubSquare} boxSize={10} />
+          <Icon as={FaGithubSquare} boxSize={8} />
         </a>
       </MenuItems>
       <MenuItems>
@@ -58,25 +58,23 @@ const Header = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Icon as={FaFacebookSquare} boxSize={10} />
+          <Icon as={FaFacebookSquare} boxSize={8} />
         </a>
       </MenuItems>
-      <Tooltip
-        label="Find out more about the School of Code"
-        aria-label="A tooltip"
-      >
-        <a
-          href="https://www.schoolofcode.co.uk/"
-          target="_blank"
-          rel="noreferrer"
+      <MenuItems>
+        <Tooltip
+          label="Find out more about the School of Code"
+          aria-label="A tooltip"
         >
-          <img
-            style={{ width: "50px", height: "50px" }}
-            src={soc}
-            alt="School of Code logo"
-          />
-        </a>
-      </Tooltip>
+          <a
+            href="https://www.schoolofcode.co.uk/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={soc} alt="School of Code logo" />
+          </a>
+        </Tooltip>
+      </MenuItems>
     </Flex>
   );
 };

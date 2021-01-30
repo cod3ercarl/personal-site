@@ -17,6 +17,7 @@ export default function InfoBox({
   technologies,
   github,
   link,
+  responsiveness,
 }) {
   const bg = useColorModeValue("light", "dark");
   return (
@@ -26,33 +27,7 @@ export default function InfoBox({
           <Link className="box-title" href={website} isExternal>
             {link}
           </Link>
-          <Text style={{ fontSize: "1rem" }}>{technologies}</Text>
-          <Box>
-            {" "}
-            <Link href={github} isExternal>
-              <Button
-                mr={5}
-                mt={10}
-                colorScheme={bg === "dark" ? "white" : "#191919"}
-                variant="outline"
-              >
-                Github Repository
-              </Button>
-            </Link>
-            <Link href={website} isExternal>
-              <Button
-                mr={5}
-                mt={10}
-                colorScheme={bg === "dark" ? "white" : "#191919"}
-                variant="outline"
-              >
-                Website
-              </Button>
-            </Link>
-          </Box>
 
-          <br />
-          <br />
           <div>
             <Player
               //autoPlay
@@ -66,6 +41,33 @@ export default function InfoBox({
           </div>
           <br />
           <Text>{text}</Text>
+        </Box>
+        <Text style={{ fontSize: "1rem" }}>{technologies}</Text>
+        <Box>
+          {" "}
+          <Link href={github} isExternal>
+            <Button
+              mr={2}
+              mt={10}
+              colorScheme={bg === "dark" ? "white" : "#191919"}
+              variant="outline"
+            >
+              Github Repository
+            </Button>
+          </Link>
+          <Link href={website} isExternal>
+            <Button
+              ml={2}
+              mt={10}
+              colorScheme={bg === "dark" ? "white" : "#191919"}
+              variant="outline"
+            >
+              Website
+            </Button>
+          </Link>
+          <p style={{ textAlign: "center", marginTop: "1rem" }}>
+            Responsiveness: {responsiveness}
+          </p>
         </Box>
       </VStack>
     </Center>

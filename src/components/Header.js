@@ -7,15 +7,15 @@ import {
   useColorModeValue,
   Link,
   useDisclosure,
+  Center,
+  HStack,
 } from "@chakra-ui/react";
 
 import Modals from "./Modals";
 import ThemeToggler from "./themeToggler";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 const MenuItems = ({ children }) => (
-  <Text fontSize="xl" mt={{ base: 4, md: 2 }} mr={5} ml={5} display="block">
-    {children}
-  </Text>
+  <Text className="nav-menu">{children}</Text>
 );
 
 // Note: This code could be better, so I'd recommend you to understand how I solved and you could write yours better :)
@@ -30,45 +30,42 @@ const Header = () => {
       as="nav"
       bg={bg === "light" ? "white" : "#191919"}
       color={bg === "light" ? "black" : "white"}
-      borderBottom={bg === "light" ? "black 1px solid" : "white 1px solid"}
+      borderBottom={bg === "light" ? "black 2px solid" : "white 2px solid"}
     >
-      <Flex align="center" mr={5}>
+      <Center>
         <ThemeToggler />
-        <h1 className="nav-header" mr={10} ml={10} mb={1}>
-          Carl McIntosh
-        </h1>
-      </Flex>
+        <Link to="/">
+          {" "}
+          <div>
+            <HStack className="logo">
+              <p className="logoText">Carl McIntosh</p>
+            </HStack>
+          </div>{" "}
+        </Link>
+      </Center>
 
-      <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
+      <Box className="icon" onClick={handleToggle}>
         {show ? <CloseIcon /> : <HamburgerIcon />}
       </Box>
 
-      <Box
-        className="box"
-        display={{ sm: show ? "block" : "none", md: "flex" }}
-        width={{ sm: "auto", md: "auto" }}
-        mr={5}
-      >
-        <Link href="#about-me">
-          <MenuItems>About Me</MenuItems>{" "}
-        </Link>
-        <Link href="#viewMyWork">
-          <MenuItems>View My Work</MenuItems>
-        </Link>
-      </Box>
+      <Box className="box">
+        <Flex className="navigation">
+          <Link href="#about-me">
+            <MenuItems>About Me</MenuItems>{" "}
+          </Link>
+          <Link href="#viewMyWork">
+            <MenuItems>View My Work</MenuItems>
+          </Link>
 
-      <Box
-        display={{ sm: show ? "block" : "none", md: "block" }}
-        mt={{ base: 4, md: 0 }}
-      >
-        <Modals
-          text="Contact Me"
-          bg="transparent"
-          border="1px"
-          isOpen={isOpen}
-          onOpen={onOpen}
-          onClose={onClose}
-        />
+          <Modals
+            text="Contact Me"
+            bg="transparent"
+            border="1px"
+            isOpen={isOpen}
+            onOpen={onOpen}
+            onClose={onClose}
+          />
+        </Flex>
       </Box>
     </Flex>
   );

@@ -6,7 +6,7 @@ export default function ThemeToggler() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <IconButton
-      mr={10}
+      mr={5}
       icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
       onClick={toggleColorMode}
       variant="ghost"

@@ -1,14 +1,18 @@
 .players {
-  max-width: 1200px;
   margin: 0px auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 .box-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-
+.title-box {
+  font-size: 1rem;
+}
+.box-image {
+  width: 100%;
+}
 .players article {
   margin: 1.5rem;
 
@@ -24,6 +28,7 @@
 .players section {
   margin: 1.5rem;
   height: auto;
+
   flex: 0 0 380px;
   padding: 15px;
   font-size: 0.8rem;
@@ -55,7 +60,10 @@
     font-size: 0.9rem;
   }
   .box-title {
-    font-size: 1.3rem;
+    font-size: 2rem;
+  }
+  .title-box {
+    font-size: 1.5rem;
   }
 }
 

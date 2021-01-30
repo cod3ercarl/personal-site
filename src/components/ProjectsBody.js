@@ -29,9 +29,10 @@ const ProjectsBody = () => {
                 video={item.video}
                 website={item.website}
                 technologies={item.technologies.map((icon, index) => (
-                  <Icon key={index} as={icon} boxSize={10} mr={5} mt={5} />
+                  <Icon key={index} as={icon} boxSize={8} mr={5} mt={5} />
                 ))}
                 github={item.github}
+                responsiveness={item.responsiveness}
               />
             </article>
           );
@@ -52,10 +53,12 @@ const ProjectsBody = () => {
                 text={item.text}
                 image={item.image}
                 website={item.website}
+                video={item.video}
                 technologies={item.technologies.map((icon, index) => (
-                  <Icon key={index} as={icon} boxSize={10} mr={5} mt={5} />
+                  <Icon key={index} as={icon} boxSize={5} mr={5} mt={5} />
                 ))}
                 github={item.github}
+                responsiveness={item.responsiveness}
               />
             </section>
           );
