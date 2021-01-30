@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import ThemeToggler from "./themeToggler";
-import { useColorModeValue, useDisclosure, Box } from "@chakra-ui/react";
+import { useColorModeValue, useDisclosure } from "@chakra-ui/react";
 import Modals from "./Modals";
 import "./navbar.css";
 

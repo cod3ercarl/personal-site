@@ -2,11 +2,9 @@ import {
   Box,
   Text,
   VStack,
-  Image,
   Link,
   Button,
   useColorModeValue,
-  Center,
 } from "@chakra-ui/react";
 import { Player, ControlBar, PlayToggle } from "video-react";
 export default function InfoBox({
