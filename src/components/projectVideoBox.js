@@ -45,26 +45,29 @@ export default function InfoBox({
         <Text style={{ fontSize: "1rem" }}>{technologies}</Text>
         <Box>
           {" "}
-          <Link href={github} isExternal>
-            <Button
-              mr={2}
-              mt={10}
-              colorScheme={bg === "dark" ? "white" : "#191919"}
-              variant="outline"
-            >
-              Github Repository
-            </Button>
-          </Link>
-          <Link href={website} isExternal>
-            <Button
-              ml={2}
-              mt={10}
-              colorScheme={bg === "dark" ? "white" : "#191919"}
-              variant="outline"
-            >
-              Website
-            </Button>
-          </Link>
+          <Center>
+            {" "}
+            <Link href={github} isExternal>
+              <Button
+                mr={2}
+                mt={10}
+                colorScheme={bg === "dark" ? "white" : "#191919"}
+                variant="outline"
+              >
+                Github Repository
+              </Button>
+            </Link>
+            <Link href={website} isExternal>
+              <Button
+                ml={2}
+                mt={10}
+                colorScheme={bg === "dark" ? "white" : "#191919"}
+                variant="outline"
+              >
+                Website
+              </Button>
+            </Link>
+          </Center>
           <p style={{ textAlign: "center", marginTop: "1rem" }}>
             Responsiveness: {responsiveness}
           </p>

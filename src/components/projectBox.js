@@ -40,6 +40,7 @@ export default function InfoBox({
         <Text>{text}</Text>
       </Box>
       <Text style={{ fontSize: "0.5rem" }}>{technologies}</Text>
+
       <Box>
         {" "}
         <Link href={github} isExternal>

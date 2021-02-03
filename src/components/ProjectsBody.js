@@ -29,7 +29,14 @@ const ProjectsBody = () => {
                 video={item.video}
                 website={item.website}
                 technologies={item.technologies.map((icon, index) => (
-                  <Icon key={index} as={icon} boxSize={8} mr={5} mt={5} />
+                  <Icon
+                    key={index}
+                    as={icon}
+                    boxSize={8}
+                    mr={3}
+                    ml={3}
+                    mt={5}
+                  />
                 ))}
                 github={item.github}
                 responsiveness={item.responsiveness}
@@ -37,6 +44,7 @@ const ProjectsBody = () => {
             </article>
           );
         })}
+
         {work.map((item) => {
           return (
             <section
@@ -55,7 +63,14 @@ const ProjectsBody = () => {
                 website={item.website}
                 video={item.video}
                 technologies={item.technologies.map((icon, index) => (
-                  <Icon key={index} as={icon} boxSize={5} mr={5} mt={5} />
+                  <Icon
+                    key={index}
+                    as={icon}
+                    boxSize={5}
+                    mr={3}
+                    ml={3}
+                    mt={5}
+                  />
                 ))}
                 github={item.github}
                 responsiveness={item.responsiveness}

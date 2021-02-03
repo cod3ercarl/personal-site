@@ -3,14 +3,18 @@ import mentor from "../images/mentor.png";
 import spotify from "../images/spotify.png";
 import rick from "../images/rick.png";
 import rock from "../images/rock.png";
+import bootcamper from "../images/bootcamper.png";
 // import snake from "../images/snake.png";
 import engage from "../images/engage.png";
 import engageVid from "../images/EngagaeMate.mp4";
 import rickTacToe from "../images/rick-tac-toe.mp4";
 import socFM from "../images/soc-fm.mp4";
 import wwDatabase from "../images/wwdatabase.mp4";
+import bootcamperIO from "../images/bootcamper.mp4";
 
 import {
+  SiPostman,
+  SiMongodb,
   SiCss3,
   SiWwe,
   SiFirebase,
@@ -100,6 +104,26 @@ export const final = [
       "A personal project of mine, built with a React front-end, and deployed on Netlify for the front end and Heroku for the backend with an Node/Express server and Postgres database. This app fetches data from a database I created based on a date. It will return whomever was WWE Champion on that day. I plan to expand on this with different titles in the future. Originally built using vanilla JavaScript, I refactored the code once I was taught React.",
     github: "https://github.com/cod3rcarl/wwdatabaseFE",
     responsiveness: "Mobile First",
+  },
+  {
+    link: "Bootcamper API",
+    image: bootcamper,
+    website: "https://bootcamper-io.herokuapp.com",
+    video: bootcamperIO,
+    technologies: [
+      SiPostman,
+      SiMongodb,
+      SiCss3,
+      SiHtml5,
+      SiJavascript,
+      SiHeroku,
+      SiNodeDotJs,
+    ],
+    text:
+      "This is a backend app built to help broaden my knowledge on RESTful APIs.  I used Postman extensively to create endpoints and apply CRUD functionality.  The app utlises pagination, sorting and filtering for different bootcamps and allows querying different courses and jobs within those bootcamps.  The app uses MongoDB to store user data,  which is used to set roles to differentiate between admins, publishers and users.  There is also login and logout functonality. The landing page was made using a package called DocGen, which took the documentation i made in the Postman app and converted the json data into html.",
+    github: "https://github.com/cod3rcarl/bootcamper.io",
+    responsiveness:
+      "Made for desktop, but responsive to allow mobile and tablet use.",
   },
 ];
 
