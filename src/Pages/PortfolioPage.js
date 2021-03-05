@@ -1,8 +1,8 @@
 import React from "react";
-import Categories from "../Components/Categories";
-import MenuItems from "../Components/MenuItems";
-import Title from "../Components/Title";
-import portfolios from "../Components/allportfolios";
+import Categories from "../components/Categories";
+import MenuItems from "../components/MenuItems";
+import Title from "../components/Title";
+import portfolios from "../components/allportfolios";
 import { useState } from "react";
 
 const allCategories = ["All", ...new Set(portfolios.map((item) => item.category))];

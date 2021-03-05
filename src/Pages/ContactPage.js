@@ -1,8 +1,8 @@
 import React from "react";
-import ContactItem from "../Components/ContactItem";
+import ContactItem from "../components/ContactItem";
 import phone from "../img/phone.svg";
 import email from "../img/emailme.svg";
-import Title from "../Components/Title";
+import Title from "../components/Title";
 import { faGithub, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

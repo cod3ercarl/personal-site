@@ -1,10 +1,10 @@
 import React from "react";
-import Title from "../Components/Title";
+import Title from "../components/Title";
 
 import { faReact, faJsSquare, faHtml5, faNodeJs, faCss3Alt, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import ImageSection from "../Components/ImageSection";
-import ServicesSection from "../Components/ServicesSection";
+import ImageSection from "../components/ImageSection";
+import ServicesSection from "../components/ServicesSection";
 
 function AboutPage() {
   return (
