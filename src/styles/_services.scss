@@ -1,0 +1,92 @@
+.ServicesSection {
+  .service {
+    width: 95%;
+    background-color: #191d2b;
+    border-left: 1px solid #2e344e;
+    border-right: 1px solid #2e344e;
+    border-bottom: 1px solid #2e344e;
+    border-top: 8px solid #2e344e;
+    transition: all 0.4s ease-in-out;
+    @media screen and (max-width: 1400px) {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    &:hover {
+      border-top: 8px solid #037fff;
+      .service-content {
+        .js {
+          color: #dbb92c;
+        }
+        .react {
+          color: #62dafb;
+        }
+        .html {
+          color: #dd4b25;
+        }
+        .node {
+          color: #3b9335;
+        }
+
+        .css {
+          color: #254bdd;
+        }
+        .netlify {
+          color: #3ba5b5;
+        }
+        .postgres {
+          color: #31648c;
+        }
+        .mongo {
+          color: #3f9937;
+        }
+        .socket {
+          color: white;
+        }
+        .postman {
+          color: #f76936;
+        }
+        .firebase {
+          color: #f79b00;
+        }
+        .auth {
+          color: #e45322;
+        }
+        .jest {
+          color: #954058;
+        }
+        .github {
+          color: black;
+        }
+        .heroku {
+          color: #8056c3;
+        }
+      }
+    }
+
+    .service-content {
+      padding: 1rem;
+
+      .s-title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        position: relative;
+      }
+      .icon {
+        width: 8rem;
+        height: 8rem;
+        color: #037fff;
+      }
+    }
+  }
+}
+
+.servives-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+
+  @media screen and (max-width: 1400px) {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
